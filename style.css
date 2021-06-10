@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500&display=swap');
+
+:root{
+    --dark: rgb(32, 32, 32);
+    --light: rgb(212, 212, 212);
+    --dar-blue: #2d314d;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: rgb(243, 243, 243);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  margin-top: 0px;
+  margin: 0px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  background-color: #0f03b9;
+  border-end-end-radius: 6px;
+}
+
+body{
+    font-family: 'Zilla Slab', serif;
+    background-color: var(--dark)!important;
+}
+
+button:focus, input:focus, select:focus, option:focus{
+  box-shadow: 0 0 0 0!important;
+  outline: 0!important;
+}
+
+textarea:focus{
+  box-shadow: 0 0 0 0!important;
+  outline: 0!important;
+}
+
+p{
+    color: white;
+    padding: 0!important;
+    margin: 0!important;
+}
+
+
+
+
+.imagem-servico{
+  height: 60px;
+  width: 90px;
+}
+
+.perfil{
+  border-radius: 50%;
+}
+
+.greenTheme{
+    background-color: rgba(61, 61, 61, 0.815)!important;
+    color: var(--light)!important;
+}
+
+.ligth{
+    color: var(--light)!important;
+}
+
+.dark{
+    color: var(--dark)!important;
+}
+
+.blue{
+  color: var(--dar-blue)!important;
+}
+
+.nav-link{
+    color: var(--light)!important;
+    font-size: 16pt;
+}
+
+.icon{
+  background-color: white;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+
+}
+
+.icon2{
+  display: none;
+  color: var(--light)!important;
+  font-size: 16pt;
+  padding: 6px;
+}
+
+.nav-item .nav-link:hover{
+    color: #0f03b9!important;
+}
+
+#title{
+    color: #0f03b9!important;
+}
+
+.btn-more{
+    background-color: #0f03b9!important;
+    color: black;
+    width: 100%;
+}
+
+.btn-more:hover{
+    background-color: #037fb9!important;
+}
+
+.nextGenImage{  
+    width:100%;
+    z-index:9;
+    position:relative;
+    top:0;
+    right:0px;
+    background-image: url('../img/bg-intro-desktop.svg');
+    background-repeat: no-repeat;
+    background-position-y:-230px;
+    background-position-x: -50px;
+    background-size: auto;
+    overflow-y: visible;
+}
+
+#sobre{
+    background-color: var(--dar-blue)!important;
+}
+
+#cursos{
+  background-color: brown;
+  width: 100%;
+  height: 300px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.card2 {
+  position: relative;
+  padding: 20px;
+  width: 100%;
+  max-width: 350px;
+  background-color: transparent;
+  border: none;  
+  text-align: center;
+}
+
+  .text {
+    margin: 20px auto;
+  }
+
+  .card2:after,
+  .card2:before {
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 8px;
+  }
+
+  .card2:before {
+    border-left: 1px solid #0f03b9;
+    border-right: 1px solid #0f03b9;
+    transform: scaleY(0);
+  }
+
+  .card2:after {
+    border-bottom: 1px solid #0f03b9;
+    border-top: 1px solid #0f03b9;
+    transform: scaleX(0);
+  }
+
+  .card2:hover:before {
+    transform: scaleY(1);
+  }
+
+  .card2:hover:after {
+    transform: scaleX(1);
+  }
+
+  .snappay, .flappy, .pagou{
+      background-color: rgb(0, 59, 0);
+      border-radius: 10px;
+  }
+
+  input, textarea{
+    background-color: transparent!important;
+    border-color: #0f03b9!important;
+    color: white!important;
+  }
+
+  input:focus, textarea:focus{
+    background-color: transparent!important;
+    border-color: #0f03b9!important;
+    color: white!important;
+  }
+
+  input::placeholder, textarea::placeholder{
+    background-color: transparent!important;
+    border-color: #0f03b9!important;
+    color: white!important;
+  }
+
+@media (max-width: 600px) 
+{
+
+  h1{
+    font-size: 18pt;
+    text-align: center!important;
+    margin-left: 0!important;
+  }  
+
+  h5{
+    text-align: center!important;
+    margin-left: 0!important;
+  }
+
+  h4{
+      text-align: center;
+      font-size: 16pt;
+  }
+
+  h4 .info{
+    text-align: start!important;
+    font-size: 150pt;
+  }
+
+  .nextGenImage{
+    background-image: url()!important;
+  }
+
+  .inverte{
+      flex-direction: column-reverse;
+  }
+
+  #topo{
+      height: 92vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+
+  #name{
+      text-align: start!important;
+  }
+
+  .icon{
+    display: none;
+  }
+
+  .icon2{
+    display: block;
+  }
+}
