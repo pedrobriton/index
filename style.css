@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500&display=swap');
 
 :root{
-    --dark: rgb(32, 32, 32);
+    --dark: rgb(0, 0, 0);
     --light: rgb(212, 212, 212);
-    --dar-blue: #2d314d;
+    --dar-blue: #0d1d92;
 }
 
 html {
